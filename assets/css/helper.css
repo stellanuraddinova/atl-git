@@ -1,0 +1,249 @@
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.bg {
+  width: 100%;
+  background-image: url(../images/back-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.p-first {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 78px;
+  color: var(--primaryGrey);
+  margin-bottom: 24px;
+}
+.p-second {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: var(--primaryGrey);
+  margin-bottom: 64px;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px 0px;
+  background-color: var(--primaryBtn);
+  border: none;
+  border-radius: 5px;
+  &:hover {
+    background-color: var(--primaryGrey);
+  }
+  & a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--primaryWhite);
+    text-decoration: none;
+  }
+}
+
+.icon {
+  background-color: var(--primaryRed);
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  margin-top: 16px;
+  border-radius: 50px;
+}
+
+.img-box {
+  border-radius: 10px;
+  background-color: var(--primaryWhite);
+  box-shadow: 0px 0px 69.23px 0px #70707040;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & p {
+    text-align: center;
+    width: 129px;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--primaryGrey);
+
+    & span {
+      font-weight: 600;
+      color: var(--primaryOrange);
+    }
+  }
+}
+
+/* BAHAR DESIGN */
+.heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.see-all {
+  text-align: right;
+  margin-bottom: 24px;
+}
+
+.see-all .see {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #f77e23;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.see-all .see::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: #f77e23;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.see-all .see:hover::after {
+  transform: scaleX(1);
+}
+.grid-span {
+  width: 247px;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  color: #fff;
+  transition: all 0.5s ease;
+  transform: scale(0.8);
+}
+
+.inf {
+  line-height: 23px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  color: #fff;
+  width: 100%;
+  opacity: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+  transform: translateY(20px);
+}
+
+.box1:hover .grid-span {
+  transform: scale(1);
+  margin-bottom: 130px;
+}
+.box1:hover .m-span {
+  /* transform: scale(1); */
+  margin-bottom: 80px;
+  transition: all 0.5s ease;
+}
+.box1:hover .m-desc {
+  /* transform: scale(1); */
+  bottom: 90px;
+  transition: all 0.5s ease;
+}
+
+.box1:hover .inf {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.description {
+  position: absolute;
+  bottom: 10px;
+  left: 18px;
+  color: #fff;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* SEC2 - TOP CONTROLS */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 50%;
+  width: 1165px;
+  height: 60px;
+  /* padding-left: 24px;
+  padding-right: 24px; */
+  cursor: pointer;
+
+  .left-control,
+  .right-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: #f77e23;
+
+    & i {
+      color: #fff;
+    }
+  }
+}
+
+/* SEC2 - FEATURED  */
+/*  */
+/* .box2:hover .inf {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+.grid-span-contest {
+  width: 255px;
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #fff;
+  /* transition: all 0.5s ease;
+  transform: scale(0.8); */
+}
+
+.mg-17 {
+  margin: 0 17px;
+}
